@@ -1,0 +1,14 @@
+mat = []
+col = 4
+row = 4
+userinput = []
+sum = 0
+def sumMajorDiagonal(mat):
+    sum = 0
+    for i in range(len(mat)):
+        sum += float(mat[i][i])
+    return sum
+for r in range(row):
+    userinput = (input("Enter a 4 x 4 matrix: "))
+    mat.append(userinput.split())
+print(sumMajorDiagonal(mat))
