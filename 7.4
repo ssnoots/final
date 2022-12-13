@@ -1,0 +1,18 @@
+s = input()
+l = s.split()
+l =[int(x) for x in l]
+count = len(l)
+total = 0
+equal = 0
+less = 0
+for n in l:
+    total = total + n
+    avg = total/count
+for n in l:
+    if n >= avg:
+        equal = equal + 1
+    elif n < avg:
+        less = less + 1
+print("Average is",avg)
+print("Number of scores above or equal to the average: ",equal)
+print("Number of scores below the average: ",less)
