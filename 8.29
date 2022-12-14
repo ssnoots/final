@@ -1,0 +1,8 @@
+def equals(m1,m2):
+    if m1 == m2:
+        print("Two lists are identical")
+ui1 = input("Enter list1: ")
+list1 = ui1.split()
+ui2 = input("Enter list2: ")
+list2 = ui2.split()
+print(equals(list1,list2))
