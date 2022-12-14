@@ -1,0 +1,9 @@
+ui = input("Enter the integers between 1 and 100: ")
+lst = ui.split()
+c = [0]*101
+for i in range(1,101):
+    counts = lst.count(str(i))
+    c[i - 1] = counts
+for x in range(len(c)):
+    if str(x) in (lst):
+        print(x,"occurs",c[x - 1],"time/s")
